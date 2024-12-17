@@ -155,7 +155,7 @@ body{
     align-items: center;
     flex-direction: row-reverse;
     background-origin: padding-box;
-    background-color: (22, 22, 22, 0.7);
+    border-style: solid;
 }
 .login-anchor{
 
