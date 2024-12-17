@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'bold';
+    src: url(font/NetflixSans_W_Bd.woff2);
+}
+@font-face {
+    font-family: 'medium';
+    src: url(font/NetflixSans_W_Md.woff2);
+}
+@font-face {
+    font-family: 'regular';
+    src: url(font/NetflixSans_W_Rg.woff2);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-letter-cache-nsrw{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.letter-cache-lpf{
+    padding: 0 1.5rem;
+    height: 7.5rem;
+    margin: 0 auto -7.5rem auto;
+}
+.wrapper{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.header-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    width: calc(100% + 16px);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.default-ltr-styledItem{
+    width: auto;
+    margin-top: 0px;
+    margin-left: 16px;
+}
+.default-ltr-cache-1d568uk{
+    width: 5.5625rem;
+    height: 1.5rem;
+    color: rgb(229,9,20);
+    fill: currentColor;
+    display: block;
+}
+.wrapper-rzlulw{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.default-styledcontainer{
+    display: inline-flex;
+    padding: 3px;
+}
+.default-styleditem{
+    width: auto;
+    margin-top: 0px;
+    margin-left: 12px;
+    display: flex;
+}
+.default-styleditem{
+    min-width: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.language-picker-header{
+    min-width: auto;
+    position: relative;
+}
+.language-pick-label{
+    right: calc(2.5rem + 0rem);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    left: calc(0.625rem + 1rem + 0.5rem);
+    line-height: 0.875rem;
+    top: 0rem;
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-property: top, font-size, line-height;
+    transition-duration: 250ms;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.32,0.94,0.6,1);
+}
+.control-wrapper{
+    min-width: auto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255);
+    fill: currentColor;
+    display: inline-flex;
+    gap: 2px;
+    letter-spacing: normal;
+    line-height: 100%;
+    position:relative;
+    text-align: left;
+    z-index: 0;
+    align-items: center;
+}
+.image-pnamzc{
+    position: absolute;
+    pointer-events: none;
+    width: 1rem;
+    height: 1rem;
+    left: 0.75rem;
+    right: auto;
+    z-index: 1;
+}
+.image-pnamzc >svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.select-box{
+    padding-bottom: 6px;
+    padding-left: 34px;
+    padding-right: 28px;
+    padding-top: 6px;
+    line-height: 1.25rem;
+    background: transparent;
+    text-indent: 0px;
+    text-shadow: none;
+    word-spacing: 0px;
+    width: 62px;
+    height: 32px;
+    -webkit-appearance: none;
+    border: 0 solid transparent;
+
+}
+.control-chrome{
+    position: absolute;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border-width: 0.0625rem;
+    padding-right: calc(0.75rem + 0rem);
+    border-color: rgba(128, 128, 128, 0.7);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-origin: padding-box;
+    background-color: (22, 22, 22, 0.7);
+}
+.login-anchor{
+
+    font-family:medium;
+    background-color: rgb(229,9,20);
+    user-select: none;
+    border: 0;
+    cursor: pointer;
+    fill: currentColor;
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4,0,0.68,0.06);
+    vertical-align: text-top;
+    width: auto;
+    font-size:14px;
+    font-weight: 500;
+    min-height: 2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 14px;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.login-anchor::after{
+
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: inherit;
+    transition: inherit;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: calc(0.25rem - 0.0625rem);
+    content: '';
+    border-color: rgba(0, 0, 0, 0);
+}
+.default-nmhp-hero{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 120rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.default-ltr-cache-jnh{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 3;
+}
+.default-ltr-cache-jnh::after{
+    content: '';
+    width: 1px;
+    margin-left: -1px;
+    height: 0;
+    padding-top: 46.666666666666664%;
+    box-sizing: border-box;
+}
+.default-ltr-cache-tswu{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.default-labfllx{
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.container-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
