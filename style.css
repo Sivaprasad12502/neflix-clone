@@ -292,13 +292,13 @@ body{
     line-height: 125%;
 }
 .sub-content{
+    font-family: regular;
     margin-bottom: 1rem;
     margin-top: 0;
     padding: 0;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 400;
-    font-family: medium;
 }
 
 .default-ltr-styledItem{
@@ -317,7 +317,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
-    font-family: medium;
+    font-family: regular;
 }
 .form-cache{
     padding-top: 16px;
@@ -422,6 +422,7 @@ body{
     position: relative;
     height: 6.25rem;
     z-index: 1;
+    scrollbar-width: none;
 }
 .curve-container{
     display: block;
@@ -545,3 +546,179 @@ body{
     height: 40px;
     border-style: solid;
 }
+.movie-contaienr-ennc{
+    margin-top: 0.75rem;
+}
+.movie-wrapper-utx{
+    position: relative;
+    display: flex;
+}
+.movie-wrapper-bvtn{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.scrol-movie-container{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: visible;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-margin-inline-start: 2.5rem;
+}
+.movie-list-ekim{
+    scroll-margin-inline-start: 2.3rem;
+    padding: 0.3rem 0.625rem;
+    flex-shrink: 0;
+}
+.movie-element{
+    position: relative;
+    padding: 0;
+    background: rgb(35,35,35);
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+
+.movie-element-ekc{
+
+    width: 7rem;
+    height: 9.8rem;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: rgb(35, 35, 35);
+}
+.movie-animation{
+    animation-delay: 0ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    z-index: 1;
+    background-color: rgb(35, 35, 35);
+    animation: loading 4000ms infinite linear;
+}
+@keyframes loading {
+    0% {
+        background-color: rgb(35, 35, 35);
+    }
+    40% {
+        background-color: rgb(35, 35, 35);
+    }
+    70% {
+        background-color: rgb(65, 65, 65);
+    }
+    90% {
+        background-color: rgb(35, 35, 35);
+    }
+    
+}
+.movie-component{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0.5rem;
+    background-size: cover;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+.letter-component{
+    font-size: 4rem;
+    bottom:0.1rem;
+    left: -0.625rem;
+    position: absolute;
+    z-index: 2;
+}
+.null-span{
+    position: relative;
+}
+.urx{
+    height: 1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.cache-component{
+    line-height: 1;
+    display: inline-block;
+    height: 1.1em;
+    position: relative;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+    -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+
+}
+.cache-component::before{
+    
+    content:"1";
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0;
+    position: absolute;
+    
+}
+
+.nav-animation-bar-right.active{
+    opacity: 0;
+    transition: transform 400ms ease-in-out;
+    transform: translate(-100%);
+    pointer-events: none;
+}
+.nav-animation-bar.active{
+    opacity: 0;
+    transition: transform 400ms ease-in-out;
+    transform: translate(100%);
+    pointer-events: none;
+    
+}
+.nav-animation-bar-right{
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background: rgb(0, 0, 0);
+    left: 0;
+    padding-right: 0.75rem;
+    transition: 400ms ease-in-out;
+}
+.nav-animation-bar{
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background: rgb(0, 0, 0);
+    right: 0;
+    padding-left: 0.75rem;
+    transition: 400ms ease-in-out;
+}
+
+
+.nav-btn{
+    height: 7.5rem;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition:  transform 400ms ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
