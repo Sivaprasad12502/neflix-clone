@@ -36,3 +36,25 @@ digts.forEach((digit,index)=>{
         digit.textContent=nums[index]
     }
 })
+
+
+const contentUl = document.querySelectorAll('.faq-que');
+
+contentUl.forEach(toggle=>{
+  toggle.addEventListener('click',()=>{
+    const parent = toggle.parentNode;
+
+    if(parent.classList.contains('show')){
+      parent.classList.remove('show')
+    }else{
+      hideAll();
+      parent.classList.add('show');
+    }
+  })
+});
+
+function hideAll  () {
+  contentUl.forEach(content=>{
+    content.parentNode.classList.remove('show');
+  })
+}
