@@ -489,7 +489,7 @@ body{
     position: relative;
     z-index: 1;
     text-align: left;
-    font-family: bold;
+    font-family: regular;
 }
 .top-select{
     position: relative;
@@ -558,6 +558,7 @@ body{
     width: 100%;
 }
 .scrol-movie-container{
+    counter-reset: movie-counter;
     position: relative;
     display: flex;
     margin: 0;
@@ -570,6 +571,7 @@ body{
     scroll-margin-inline-start: 2.5rem;
 }
 .movie-list-ekim{
+    counter-increment: movie-counter;
     scroll-margin-inline-start: 2.3rem;
     padding: 0.3rem 0.625rem;
     flex-shrink: 0;
@@ -660,7 +662,7 @@ body{
 }
 .cache-component::before{
     
-    content:"1";
+    content:counter(movie-counter);
     -webkit-text-fill-color: rgb(0, 0, 0);
     -webkit-text-stroke: 0;
     position: absolute;
@@ -722,3 +724,82 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+
+.box-container{
+    margin-top: -0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0px;
+    flex-direction: column;
+    padding: 0px;
+}
+.box-text{
+    display: flex;
+    margin-top: 0.75rem;
+}
+
+.box-wrapper{
+    margin-top: 0.75rem;
+    display: flex;
+}
+.box-styled-item{
+    margin-top: -0.5rem;
+    margin-left: -0.75rem;
+    width: calc(100% + 0.75rem);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-item{
+
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+    display: flex;
+    flex: 0 0 calc(100% - 0.75rem);
+
+}
+.box-inner-elscq{
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    backdrop-filter: blur(30px);
+
+}
+.item-container{
+    padding: 1.5rem 1rem 5rem 1rem;
+    margin-top: -0.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.box-item-content{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.box-item-text{
+    font-family: bold;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    padding:0;
+    color: rgb(255, 255, 255);
+}
+.box-item-prgrp{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-item-image{
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    margin-top: 0.5rem;
+    transform: translate(36px, 36px) scale(0.88) translate(-36px, -36px);
+}
