@@ -331,6 +331,19 @@ body{
     position: relative;
     width: 100%;
 }
+
+.email-feild:focus + label ,.email-label-fiel.active{
+    
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    left: 1rem;
+    right: 1rem;
+    top: 0.25rem;
+}
+
+
 .email-label-fiel{
     font-family: regular;
     font-size: 1rem;
@@ -351,6 +364,7 @@ body{
     transition-timing-function: cubic-bezier(0.4,0,0.68,0.06);
 
 }
+
 .label-control-wrapper{
     position: relative;
     z-index: 0;
@@ -358,6 +372,8 @@ body{
     align-items: center;
 }
 .email-feild{
+    width: 100%;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     line-height: 1.5;
     padding-top: 1.25rem;
@@ -366,6 +382,13 @@ body{
     padding-left: 1rem;
     background: transparent;
     border: 0 solid transparent;
+}
+
+.email-feild:focus{
+    outline-color: red;
+}
+.email-feild:valid{
+    outline-color: green;
 }
 .feild-container{
     background: rgba(22, 22, 22, 0.7);
@@ -811,6 +834,7 @@ body{
     margin-top: -1rem;
     flex-direction: column;
     padding: 0px;
+    margin-bottom: 3.5rem;
 }
 .faq-wrapper{
     margin-top: 0.75rem;
@@ -839,7 +863,7 @@ body{
     transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
 }
 .faq-que-content{
-    font-family: medium;
+    font-family: regular;
     font-size: inherit;
     font-weight: inherit;
     padding: 1.5rem;
@@ -854,19 +878,22 @@ body{
 }
 
 .faq-ans-content{
+    opacity: 0;
+    max-height: 0;
     font-family: medium;
     font-size: 1.125rem;
     font-weight: 400;
-    display: none;
-    padding: 1.5rem;
-    transition: 250ms cubic-bezier(0.32, 0.94, 0.6, 1);
+    transition: 500ms cubic-bezier(0.32, 0.94, 0.6, 1);
     text-align: left;
     background-color: rgb(45, 45, 45);
     color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 .faq-list-item.show .faq-ans-content{
-    display: block;
-    transition: 250ms cubic-bezier(0.32, 0.94, 0.6, 1);
+    opacity: 1;
+    padding: 1.5rem;
+    max-height: 370px;
+    transition: 500ms cubic-bezier(0.32, 0.94, 0.6, 1);
 
 }
 .elj7tfr3{
@@ -875,4 +902,23 @@ body{
 }
 .faq-list-item.show .elj7tfr3{
     transform: rotateZ(-45deg);
+    transition: 250ms cubic-bezier(0.32, 0.94, 0.6, 1);
+
+}
+.footer-signup{
+    margin-bottom: 3.5rem;
+}
+.form-cache.flex-start{
+    align-items: flex-start;
+}
+.valid-checker ,.error-check{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    color: rgb(235, 57, 66);
+    fill: currentColor;
 }
