@@ -108,14 +108,11 @@ window.addEventListener('scroll',scrollBtn)
 function scrollBtn() {
   const scrollPosition = window.scrollY;
   const height = buttonEl.offsetHeight;
-
-  if (scrollPosition > height + 150) {
-      buttonEl.classList.add('active');
-  } else if (scrollPosition > height + 500) {
-      buttonEl.classList.remove('active');
-  } else if (scrollPosition > height + 1000) {
-      buttonEl.classList.add('active');
-  } else if (scrollPosition > height) {
-      buttonEl.classList.remove('active');
-  }
+  if (scrollPosition > height + 500) {
+    buttonEl.classList.add('active');
+} else if (scrollPosition > height + 150) {
+    buttonEl.classList.remove('active');
+} else {
+    buttonEl.classList.remove('active');
+}
 }
