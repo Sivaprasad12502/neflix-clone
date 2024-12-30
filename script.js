@@ -27,15 +27,15 @@ scrollableContainer.addEventListener('scroll', checkScrollPosition);
 checkScrollPosition();
 
 
-const digts=document.querySelectorAll('.cache-component')
-const nums=[1,2,3,4,5,6,7,8,9,10]
+// const digts=document.querySelectorAll('.cache-component')
+// const nums=[1,2,3,4,5,6,7,8,9,10]
 
 
-digts.forEach((digit,index)=>{
-    if(index < nums.length){
-        digit.textContent=nums[index]
-    }
-})
+// digts.forEach((digit,index)=>{
+//     if(index < nums.length){
+//         digit.textContent=nums[index]
+//     }
+// })
 
 
 const contentUl = document.querySelectorAll('.faq-que');
@@ -116,3 +116,96 @@ function scrollBtn() {
     buttonEl.classList.remove('active');
 }
 }
+
+const marketSelect=document.querySelector('.market-select')
+const contentslect=document.querySelector('.content-select')
+
+function updateContentOptions(){
+  contentslect.innerHTML=''
+
+  if(marketSelect.value==="India"){
+    const indaiOptions=[
+      {value:'Movies', label:'Movies'},
+      {value:'TV Shows', label:'TV Shows'},
+    ]
+    indaiOptions.forEach(option=>{
+      const opt=document.createElement('option')
+      opt.value=option.value;
+      opt.label=option.label;
+      contentslect.appendChild(opt)
+    })
+  }else{
+    const globalOptions=[
+          { value: 'Movies - English', label: 'Movies - English' },
+          { value: 'Movies - Other languages', label: 'Movies - Other languages' },
+          { value: 'TV Shows - English', label: 'TV Shows - English' },
+          { value: 'TV Shows - Other languages', label: 'TV Shows - Other languages' },
+    ]
+    globalOptions.forEach(option =>{
+      const opt=document.createElement('option');
+      opt.value=option.value
+      opt.label=option.label
+      contentslect.appendChild(opt)
+    })
+  }
+
+}
+marketSelect.addEventListener('change',updateContentOptions);
+updateContentOptions()
+
+
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const movieContainer = document.querySelector('.scrol-movie-container');
+    const selectBox=document.getElementById(':R59n75at4l:')
+    const secondselctBox=document.querySelectorAll('.content-select')
+    const movieList = data.movie;
+
+    const displayMovies=(category)=>{
+      movieContainer.innerHTML=""
+      const selectedMovies=data[category]
+      selectedMovies.forEach((movie, index) => {
+        const movieIndex = index + 1
+  
+        const movieItemHTML = `
+          <li class="movie-list-ekim">
+            <button class="movie-element">
+              <div class="movie-element-ekc">
+                <div class="movie-animation"></div>
+                <span
+                  class="movie-component"
+                  style="
+                    background-image: url(${movie.image});
+                  "
+                ></span>
+                Mary
+              </div>
+              <span class="letter-component">
+                <span class="null-span">
+                  <span class="urx"></span>
+                  <span class="cache-component">${movieIndex}</span>
+                </span>
+              </span>
+            </button>
+          </li> -->
+        `;
+  
+        movieContainer.innerHTML += movieItemHTML;
+      });
+    }
+    displayMovies("India")
+    selectBox.addEventListener('change',(event)=>{
+      displayMovies(event.target.value)
+    })
+    secondselctBox.forEach((en)=>{
+      addEventListener('change',(event)=>{
+        displayMovies(event.target.value)
+      })
+    })
+
+
+  })
+  .catch(error => {
+    console.error('Error loading the JSON file:', error);
+  });

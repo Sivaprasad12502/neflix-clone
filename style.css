@@ -830,6 +830,7 @@ body{
 }
 .box-text{
     display: flex;
+    /* margin-top: 0.85rem; */
     margin-top: 0.75rem;
 }
 
@@ -910,7 +911,8 @@ body{
     margin-bottom: 3.5rem;
 }
 .faq-wrapper{
-    margin-top: 0.75rem;
+    margin-top: 1rem;
+    /* margin-top: 0.75rem; */
 }
 .faq-list{
     list-style: none;
@@ -979,7 +981,10 @@ body{
 
 }
 .footer-signup{
-    margin-bottom: 3.5rem;
+    z-index: 100;
+    background: black;
+    margin-bottom: 2.5rem;
+    /* margin-bottom: 3.5rem; */
 }
 .form-cache.flex-start{
     align-items: flex-start;
@@ -997,6 +1002,8 @@ body{
 }
 
 .footer-end-sec{
+    background: black;
+    z-index: 100;
     padding-bottom: 6rem;
 }
 .footer-conainer{
@@ -1047,7 +1054,8 @@ body{
     flex-wrap: wrap;
     flex: 0 0 calc(100% - 0.75rem);
     padding: 0px;
-    margin-top: 0.75rem;
+    /* margin-top: 0.75rem; */
+    margin-top: 1rem;
     margin-left: 0.75rem;
 }
 .select-box-box{
@@ -1335,7 +1343,7 @@ body{
         z-index: 1;
         position: absolute;
         top: 0;
-        width: 165rem;
+        width: 100%;
         left: 50%;
         bottom: 100px;
         background: radial-gradient(11% 56% at 17% 50%, #461518 0%, transparent 100%), radial-gradient(11% 56% at 83% 50%, #461518 0%, transparent 100%);
