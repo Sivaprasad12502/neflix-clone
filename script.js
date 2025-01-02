@@ -188,7 +188,7 @@ fetch('data.json')
                 </span>
               </span>
             </button>
-          </li> -->
+          </li>
         `;
   
         movieContainer.innerHTML += movieItemHTML;
