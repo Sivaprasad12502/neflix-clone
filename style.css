@@ -15,6 +15,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 .header-letter-cache-nsrw{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
@@ -159,6 +160,9 @@ body{
     flex-direction: row-reverse;
     background-origin: padding-box;
     border-style: solid;
+}
+.control-chrome svg{
+    margin-top: 1px;
 }
 .login-anchor{
 
@@ -410,6 +414,7 @@ body{
     border: 1px solid rgba(128, 128, 128, 0.7);
 }
 .main-btn{
+    line-height: 1;
     font-size: 1.125rem;
     /* margin-top: 1rem; */
     margin-top: 8px;
@@ -434,7 +439,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 3rem;
-    font-family: bold;
+    font-family: medium;
 }
 .elaxwel{
     display: inline-block;
@@ -632,11 +637,13 @@ body{
     right: 0;
     bottom: 0;
     /* z-index: 1; */
-    height: 40px;
+    /* height: 40px; */
+    height: 38px;
     border-style: solid;
 }
 .slect-control-chrome svg{
     margin-right: 12px;
+    margin-top: 1px;
 }
 .movie-contaienr-ennc{
     margin-top: 0.75rem;
@@ -699,6 +706,7 @@ body{
     z-index: 1;
     background-color: rgb(35, 35, 35);
     animation: loading 4000ms infinite linear;
+   
 }
 @keyframes loading {
     0% {
@@ -725,6 +733,11 @@ body{
     z-index: 2;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+}
+.movie-element:hover{
+    transform: scale(1.06);
+    transition: 0.3s ease-in-out;
 }
 .letter-component{
     font-size: 4rem;
@@ -826,7 +839,8 @@ body{
     margin-left: -0px;
     flex-direction: column;
     padding: 0px;
-    margin-bottom: 3.5rem;
+    /* margin-bottom: 3.5rem; */
+    margin-bottom: 3.7rem;
 }
 .box-text{
     display: flex;
@@ -923,7 +937,8 @@ body{
 .faq-list-item{
     list-style-type: none;
     padding: 0;
-    margin: 0 0 0.5rem 0;
+    /* margin: 0 0 0.5rem 0; */
+    margin: 0 0 7px 0;
 }
 .faq-que{
     margin: 0px 0px 0.0625rem;
@@ -971,10 +986,11 @@ body{
     transition: 500ms cubic-bezier(0.32, 0.94, 0.6, 1);
 
 }
-.elj7tfr3{
+.svg-plus{
     height: 24px;
-    width: 24px;
+    width: 28.5px;
 }
+
 .faq-list-item.show .elj7tfr3{
     transform: rotateZ(-45deg);
     transition: 250ms cubic-bezier(0.32, 0.94, 0.6, 1);
@@ -983,8 +999,9 @@ body{
 .footer-signup{
     z-index: 100;
     background: black;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
     /* margin-bottom: 3.5rem; */
+    margin-bottom: 46px;
 }
 .form-cache.flex-start{
     align-items: flex-start;
@@ -1007,7 +1024,7 @@ body{
     padding-bottom: 6rem;
 }
 .footer-conainer{
-    margin-top: -36px;
+    margin-top: -40px;
     display: flex;
     flex-direction: column;
 }
@@ -1016,6 +1033,9 @@ body{
     flex-wrap: wrap;
     margin-top: 36px;
     padding: 3px;
+}
+.footer-wraper.f{
+    padding: 0;
 }
 .footer-content{
     margin: 0;
@@ -1042,20 +1062,24 @@ body{
 .footer-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -0.75rem;
-    margin-left: -0.75rem;
+    /* margin-top: -0.75rem;
+    margin-left: -0.75rem; */
     width: calc(100% + 0.75rem);
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0px;
+    margin: -12px 0px 14px -12px;
+    /* margin: -16px 0px 14px -12px; */
+
 }
 .footer-list-item{
     display: inline-flex;
     flex-wrap: wrap;
     flex: 0 0 calc(100% - 0.75rem);
     padding: 0px;
-    /* margin-top: 0.75rem; */
-    margin-top: 1rem;
+    line-height: 21px;
+    margin-top: 0.75rem;
+    /* margin-top: 1rem; */
     margin-left: 0.75rem;
 }
 .select-box-box{
@@ -1069,9 +1093,14 @@ body{
     border: 0 solid transparent;
     font-size: 16px;
     color: white;
+    font-family: regular;
 }
 .select-box-box:focus{
     outline-color: white;
+}
+.control-chrome.s svg {
+    margin-top: 2px;
+
 }
 .optn{
     color: black;
@@ -1086,6 +1115,16 @@ body{
 }
 
 @media screen and (min-width:601px){
+    .elaxwel >svg{
+        margin-left: 0.75rem;
+    }
+    .select-box{
+        padding: 6px 36px 6px 34px;
+        font-family: regular;
+    }
+    .action-form{
+        margin-bottom: 8px;
+    }
     .letter-cache-lpf,.section-main-vho{
        padding: 0 2rem; 
     }
@@ -1098,6 +1137,9 @@ body{
         width: unset;
         color: rgb(255, 255, 255);
         font-size: 16px;
+    }
+    .email-label-fiel{
+        top: 16px;
     }
     .main-btn{
         margin-left:0.5rem;
@@ -1133,6 +1175,9 @@ body{
     .floating-btn.active{
         display: none;
     }
+    .sub-head-content{
+        text-align: center;
+    }
     .form-cache.flex-start{
         justify-content: unset;
 
@@ -1146,11 +1191,26 @@ body{
     .footer-list-item{
         flex: 0 0 calc(50% - 0.75rem);
     }
-    
+    .item-container{
+        padding: 1.5rem 1rem 6rem 1rem;
+    }
+    .faq-que-content svg{
+        width: 24px;
+        height: 24px;
+    }
 }
 @media screen and (min-width:960px){
     .letter-cache-lpf{
         padding: 0 5rem;
+    }
+    .sub-content{
+        margin-bottom: 1.5rem;
+    }
+    .defautl-letr-fec-fec{
+        max-width: 31.75rem;
+    }
+    .field-container-dv.flw{
+        flex-basis: 77%;
     }
     .default-ltr-cache-1d568uk{
         width: 9.25rem;
@@ -1158,7 +1218,8 @@ body{
     }
     .default-ltr-fec{
         /* margin: 0 0 0 0; */
-        min-height: 34rem;
+        /* min-height: 34rem; */
+        min-height: 36rem;
     }
     .header-content{
         font-size: 2.5rem;
@@ -1181,6 +1242,10 @@ body{
     .top-select{
         margin: 1rem 1.5rem 0 0;
     }
+    .movie-contaienr-ennc{
+        margin-top: 1rem;
+
+    }
     .movie-element-ekc{
         width: 8.75rem;
         height: 12.25rem;
@@ -1197,21 +1262,49 @@ body{
     .cache-component{
         line-height: 70px;
     }
+    .nmhp-top{
+        margin-bottom: 4rem;
+
+    }
+    .box-container{
+        margin-bottom: 4rem;
+    }
+    .box-item-content{
+        margin-top: 0.75rem;
+    }
+    .box-wrapper{
+        margin-top: 1rem;
+    }
     .box-styled-item{
         margin-top: -0.75rem;
     }
     .box-item {
         flex: 0 0 calc(50% - 0.75rem);
+        margin-top: 0.75rem;
+    }
+    .box-item-image{
+        transform: scale(1);
+        bottom: 0.5rem;
+        right: 0.5rem;
     }
     .item-container{
         padding: 1.5rem 1.5rem 6rem 1.5rem;
+        margin-top: -0.75rem;
     }
+    .faq-que-content svg{
+        width: 36px;
+        height: 36px;
+    }
+   
     .faq-container{
         margin-bottom: 4rem;
     }
+    .faq-container .box-text{
+        margin-top: 1rem;
+    }
 
     .footer-signup{
-        margin-bottom: 4rem;
+        margin-bottom: 54px;
     }
     .default-letter-cache-form{
         max-width: 40.1875rem;
@@ -1228,6 +1321,10 @@ body{
     }
 }
 @media screen  and (min-width:1280px){
+    .main-btn.flw{
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
     
     .letter-cache-lpf,.section-main-vho{
         padding: 0 9.25rem;
@@ -1238,13 +1335,22 @@ body{
     .header-content{
         margin-bottom: 1rem;
         font-size: 3.5rem;
-        font-weight: 900;
+        font-weight:bolder;
     }
     .defautl-letr-fec-fec{
         max-width: 36.75rem
     }
+    .sub-content{
+        margin-bottom: 2rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: medium;
+    }
     .default-ltr-fec{
-        min-height: min(80vh, 42rem);
+        min-height: min(80vh, 44rem);
+    }
+    .default-letter-cache-form{
+       margin: unset;
     }
     .curve-container-style{
         width: 130%;
@@ -1254,21 +1360,64 @@ body{
         width: 11.25rem;
         height: 15.75rem;
     }
+    .movie-list-ekim{
+        padding: 0.5rem 1.375rem;
+    }
     .cache-component{
         font-size: 6.25rem;
         line-height: 85px;
     
+    }
+    .box-text{
+        margin-top: 1rem;
     }
     .box-item {
         flex: 0 0 calc(25% - 1rem);
         margin-top: 0.75rem;
         margin-left: 1rem;
     }
+    .box-styled-item{
+        margin-top: -0.75rem;
+        margin-left: -1rem;
+        width: calc(100% + 1rem);
+    }
+    .box-item-text{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .box-item-content{
+        margin-top: 1rem;
+    }
+    .box-item-image{
+        bottom: 0.75rem;
+        right: 0.75rem;
+        
+    }
+    .box-item-image svg{
+        height: 72px;
+        width: 72px;
+    }
+    .box-container{
+        margin-top: -1rem;
+    }
     .item-container{
         padding: 1.5rem 1rem 8rem 1rem;
-        
+        margin-top: -1rem;
+
     
     }
+    .footer-large{
+        display: flex;
+        justify-content: center;
+    }
+    .default-letter-cache-form{
+        width: 100%;
+        max-width: 48.9375rem;
+    }
+    .form-cache.flex-start .main-btn {
+        font-size: 1.5rem;
+    }
+
     .footer-list-item {
         flex: 0 0 calc(25% - 0.75rem);
     }
@@ -1289,9 +1438,15 @@ body{
         font-size: 2rem;
         font-weight: 700;
     }
+    .contaienr-cache-gtd{
+        height: 116px;
+    }
     .curve-container-style{
         width: 120%;
         left: -10%;
+    }
+    .sub-section{
+        margin-top: -2rem;
     }
     .top-select{
         margin-top: 1.5rem;
@@ -1318,6 +1473,7 @@ body{
     }
     .item-container{
         padding: 2rem 1.5rem 8rem 1.5rem;
+        margin-top: -1.5rem;
         
     
     }
@@ -1327,6 +1483,13 @@ body{
     }
     .box-item-content{
         margin-top: 1.5rem;
+    }
+    .box-styled-item{
+        margin-top: -12px;
+    }
+    .box-item-image{
+        bottom: 1rem;
+        right: 1rem;
     }
     .section-main-vho{
         max-width: 1212px;
@@ -1350,5 +1513,16 @@ body{
         transform: translateX(-50%);
 
     }
+    /* .background-line-container{
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 1276px;
+        bottom: 100px;
+        z-index: 1;
+        background: linear-gradient(0deg, transparent 0%, #6f181d 50%, transparent 100%);
+        width: 120.5rem;
+        transform: translate(calc(-50% + 0.25rem), 0px);
+    } */
 
 }
