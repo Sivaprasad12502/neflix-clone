@@ -61,6 +61,14 @@ function hideAll  () {
 
 
 const inputval=document.querySelectorAll('.email-feild');
+const btns=document.querySelectorAll('.main-btn')
+
+
+btns.forEach((button, index)=>{
+ button.addEventListener('click',()=>{
+  inputval[index].focus()
+})
+})
 
 inputval.forEach(input =>{
   const validChecker = input.closest('.field-container-dv').querySelector('.valid-checker');
@@ -152,6 +160,8 @@ function updateContentOptions(){
 }
 marketSelect.addEventListener('change',updateContentOptions);
 updateContentOptions()
+
+
 
 
 fetch('data.json')

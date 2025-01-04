@@ -1102,6 +1102,13 @@ body{
     margin-top: 2px;
 
 }
+.select-box option{
+    color: initial;
+}
+.select-box-box option{
+    color: initial;
+
+}
 .optn{
     color: black;
 }
@@ -1112,6 +1119,14 @@ body{
     font-size: 0.875rem;
     font-weight: 400;
     font-family: regular;
+}
+.faq-que-content:hover{
+    cursor: pointer;
+    background-color: rgb(80, 80, 79);
+    color: rgb(255, 255, 255);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4,0,0.68,0.06);
 }
 
 @media screen and (min-width:601px){
@@ -1160,7 +1175,7 @@ body{
         width: unset;
     }
     .field-container-dv.flw{
-        flex-basis: 58%;
+        flex-basis: 57%;
 
     }
     .main-btn.flw{
@@ -1434,6 +1449,9 @@ body{
         margin-bottom: 1.5rem;
         font-size: 4rem;
     }
+    .field-container-dv.flw{
+        flex-basis: 91%;
+    }
     .sub-sect-title{
         font-size: 2rem;
         font-weight: 700;
@@ -1501,6 +1519,12 @@ body{
     }
     .letter-cache-lpf{
         max-width: 1212px;
+    }
+    .field-container-dv{
+        flex-basis: 72%;
+    }
+    .form-cache.flex-start .main-btn{
+        flex-basis: 27%;
     }
     .background-wrapper{
         z-index: 1;
