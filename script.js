@@ -67,6 +67,12 @@ const btns=document.querySelectorAll('.main-btn')
 btns.forEach((button, index)=>{
  button.addEventListener('click',()=>{
   inputval[index].focus()
+
+  if(index==0){
+    window.scrollBy(0,150)
+  }else if (index===1){
+    window.scrollBy(0,-150)
+  }
 })
 })
 
