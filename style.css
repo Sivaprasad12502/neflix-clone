@@ -395,7 +395,7 @@ body{
     outline-color: red;
 }
 .email-feild:valid{
-    outline-color: green;
+    outline-color:rgb(255, 255, 255);
 }
 .feild-container{
     background: rgba(22, 22, 22, 0.7);

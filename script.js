@@ -3,23 +3,38 @@ const scrollableContainer = document.querySelector('.scrol-movie-container');
 const navbarRight = document.querySelector('.nav-animation-bar-right');
 const navbarLeft = document.querySelector('.nav-animation-bar');
 
+navbarLeft.addEventListener('click',()=>{
+  scrollableContainer.scrollLeft += 100;
+})
+navbarRight.addEventListener('click',()=>{
+  scrollableContainer.scrollLeft-=100;
+})
 
 
 function checkScrollPosition() {
   const scrollPosition = scrollableContainer.scrollLeft;
   const maxScroll = scrollableContainer.scrollWidth - scrollableContainer.clientWidth;
+  console.log('scrollPosition:', scrollPosition, 'maxScroll:', maxScroll);
 
-  if (scrollPosition > 0) {
-    navbarLeft.classList.add('active');
-  } else {
+
+
+  if (scrollPosition === 0) {
     navbarLeft.classList.remove('active');
-  }
+    navbarRight.classList.add('active')
+  } 
 
-  if (scrollPosition < maxScroll) {
-    navbarRight.classList.add('active');
-  } else {
-    navbarRight.classList.remove('active');
+  if(scrollPosition > 0){
+    navbarLeft.classList.remove('active')
+    navbarRight.classList.remove('active')
   }
+  if(scrollPosition === maxScroll){
+    navbarRight.classList.remove('active')
+    navbarLeft.classList.add('active')
+  }
+ 
+ 
+
+  
 }
 
 scrollableContainer.addEventListener('scroll', checkScrollPosition);
